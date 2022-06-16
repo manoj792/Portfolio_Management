@@ -1,0 +1,1149 @@
+"2022-06-16 08:14:00 [restartedMain] INFO  c.c.a.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.1 on Ankit with PID 14080 (D:\MFPEEEEE\Authorization\Authorization\target\classes started by ankit in D:\MFPEEEEE\Authorization\Authorization)
+""2022-06-16 08:14:00 [restartedMain] INFO  c.c.a.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-06-16 08:14:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-06-16 08:14:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-06-16 08:14:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-06-16 08:14:02 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+""2022-06-16 08:14:02 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+""2022-06-16 08:14:02 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-06-16 08:14:02 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+""2022-06-16 08:14:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-06-16 08:14:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2028 ms
+""2022-06-16 08:14:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-06-16 08:14:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-06-16 08:14:03 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pms'
+""2022-06-16 08:14:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-06-16 08:14:03 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+""2022-06-16 08:14:03 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-06-16 08:14:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2022-06-16 08:14:04 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-06-16 08:14:04 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 08:14:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-06-16 08:14:05 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+""2022-06-16 08:14:05 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2022-06-16 08:14:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+""2022-06-16 08:14:06 [restartedMain] INFO  c.c.a.AuthorizationApplication - Started AuthorizationApplication in 5.881 seconds (JVM running for 7.074)
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] ERROR c.c.a.controller.AuthController - Authentication is failed...
+""2022-06-16 08:16:47 [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.cts.authorization.exception.UserNotFoundException: INVALID_CREDENTIALS] with root cause
+"com.cts.authorization.exception.UserNotFoundException: INVALID_CREDENTIALS
+	at com.cts.authorization.controller.AuthController.authenticate(AuthController.java:65)
+	at com.cts.authorization.controller.AuthController.createAuthenticationToken(AuthController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 08:17:24 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:17:25 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 08:17:25 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 08:17:31 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:17:31 [http-nio-8081-exec-5] ERROR c.c.a.controller.AuthController - Authentication is failed...
+""2022-06-16 08:17:31 [http-nio-8081-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.cts.authorization.exception.UserNotFoundException: INVALID_CREDENTIALS] with root cause
+"com.cts.authorization.exception.UserNotFoundException: INVALID_CREDENTIALS
+	at com.cts.authorization.controller.AuthController.authenticate(AuthController.java:65)
+	at com.cts.authorization.controller.AuthController.createAuthenticationToken(AuthController.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 08:17:36 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:17:36 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 08:17:36 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 08:18:46 [http-nio-8081-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+"io.jsonwebtoken.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:354)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.cts.authorization.util.JwtUtil.getAllClaimsFromToken(JwtUtil.java:34)
+	at com.cts.authorization.util.JwtUtil.getClaimFromToken(JwtUtil.java:29)
+	at com.cts.authorization.util.JwtUtil.getUsernameFromToken(JwtUtil.java:21)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 08:19:11 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:19:11 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 08:19:28 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:19:28 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 08:21:24 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:21:24 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 08:21:38 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+"io.jsonwebtoken.SignatureException: Unsupported signature algorithm 'HS5q2'
+	at io.jsonwebtoken.SignatureAlgorithm.forName(SignatureAlgorithm.java:270)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:289)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.cts.authorization.util.JwtUtil.getAllClaimsFromToken(JwtUtil.java:34)
+	at com.cts.authorization.util.JwtUtil.getClaimFromToken(JwtUtil.java:29)
+	at com.cts.authorization.util.JwtUtil.getUsernameFromToken(JwtUtil.java:21)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 08:21:44 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:21:44 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 08:22:45 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:22:45 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 08:22:45 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 08:35:27 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:35:27 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 08:35:27 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 08:36:24 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:36:24 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 08:45:48 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 08:45:48 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 08:45:48 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 08:47:34 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 08:47:34 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 09:00:09 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 09:00:09 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 09:00:09 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 11:05:22 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m16s61ms409µs).
+""2022-06-16 11:21:34 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 11:21:34 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 11:21:34 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 11:36:38 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 11:36:38 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 11:36:38 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 11:41:03 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 11:41:03 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 11:59:13 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - JWT Token has expired
+""2022-06-16 11:59:13 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 11:59:13 [http-nio-8081-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-06-16T11:51:38Z. Current time: 2022-06-16T11:59:13Z, a difference of 455108 milliseconds.  Allowed clock skew: 0 milliseconds.] with root cause
+"io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-06-16T11:51:38Z. Current time: 2022-06-16T11:59:13Z, a difference of 455108 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.cts.authorization.util.JwtUtil.getAllClaimsFromToken(JwtUtil.java:34)
+	at com.cts.authorization.util.JwtUtil.getClaimFromToken(JwtUtil.java:29)
+	at com.cts.authorization.util.JwtUtil.getUsernameFromToken(JwtUtil.java:21)
+	at com.cts.authorization.controller.AuthController.getUname(AuthController.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 11:59:26 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 11:59:26 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 11:59:26 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 11:59:38 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 11:59:38 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 12:14:36 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 12:14:36 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 12:14:36 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 12:14:58 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 12:14:58 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 12:34:57 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - JWT Token has expired
+""2022-06-16 12:34:57 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 12:34:57 [http-nio-8081-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-06-16T12:29:36Z. Current time: 2022-06-16T12:34:57Z, a difference of 321081 milliseconds.  Allowed clock skew: 0 milliseconds.] with root cause
+"io.jsonwebtoken.ExpiredJwtException: JWT expired at 2022-06-16T12:29:36Z. Current time: 2022-06-16T12:34:57Z, a difference of 321081 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.cts.authorization.util.JwtUtil.getAllClaimsFromToken(JwtUtil.java:34)
+	at com.cts.authorization.util.JwtUtil.getClaimFromToken(JwtUtil.java:29)
+	at com.cts.authorization.util.JwtUtil.getUsernameFromToken(JwtUtil.java:21)
+	at com.cts.authorization.controller.AuthController.getUname(AuthController.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.cts.authorization.util.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+"2022-06-16 12:35:03 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 12:35:03 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 12:35:03 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 12:35:26 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 12:35:26 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 12:37:06 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 12:37:06 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 12:37:06 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 12:46:06 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 12:46:06 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 12:46:06 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 12:46:57 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 12:46:57 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 12:47:51 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 12:47:51 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:10:41 [RMI TCP Connection(301)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2022-06-16 13:10:42 [RMI TCP Connection(301)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 13:10:43 [RMI TCP Connection(301)-127.0.0.1] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""2022-06-16 13:10:43 [RMI TCP Connection(301)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-06-16 13:10:43 [RMI TCP Connection(301)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-06-16 13:16:04 [restartedMain] INFO  c.c.a.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.1 on Ankit with PID 6392 (D:\MFPEEEEE\Back-End Spring-Boot\Authorization\Authorization\target\classes started by ankit in D:\MFPEEEEE\Back-End Spring-Boot\Authorization\Authorization)
+""2022-06-16 13:16:04 [restartedMain] INFO  c.c.a.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-06-16 13:16:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-06-16 13:16:04 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-06-16 13:16:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-06-16 13:16:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 226 ms. Found 1 JPA repository interfaces.
+""2022-06-16 13:16:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+""2022-06-16 13:16:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-06-16 13:16:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+""2022-06-16 13:16:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-06-16 13:16:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8677 ms
+""2022-06-16 13:16:13 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-06-16 13:16:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-06-16 13:16:14 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pms'
+""2022-06-16 13:16:15 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-06-16 13:16:16 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+""2022-06-16 13:16:17 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-06-16 13:16:18 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2022-06-16 13:16:22 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-06-16 13:16:22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 13:16:24 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-06-16 13:16:28 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+""2022-06-16 13:16:29 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2022-06-16 13:16:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+""2022-06-16 13:16:30 [restartedMain] INFO  c.c.a.AuthorizationApplication - Started AuthorizationApplication in 27.833 seconds (JVM running for 37.758)
+""2022-06-16 13:18:02 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-06-16 13:18:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-06-16 13:18:02 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+""2022-06-16 13:18:02 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:18:03 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:18:03 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:22:49 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:22:49 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:22:49 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:26:08 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:26:08 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:26:08 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:29:49 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:29:49 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:29:49 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:34:33 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:34:33 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:34:33 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:41:55 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:41:55 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:41:55 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:41:56 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:41:56 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:41:56 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:41:57 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:41:57 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:41:57 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:41:57 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:43:55 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:43:55 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:43:55 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:43:55 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:43:55 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:43:55 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:43:55 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:43:55 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:43:55 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:43:55 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:44:58 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:44:58 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:44:58 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:45:58 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 13:45:58 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 13:45:58 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 13:46:31 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:46:31 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:46:31 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:46:31 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:46:31 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:46:31 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:46:31 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:46:31 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:46:31 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:46:31 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:37 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:37 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:38 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:38 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:43 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:43 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:46 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:46 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:46 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:46 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:46 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:46 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:46 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:46 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:46 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:46 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:50 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:50 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:50 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:50 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:51 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:51 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:51 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:51 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:51 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:51 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:51 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:51 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:51 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:51 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:54 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:54 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:58 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:58 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:58 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:58 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:58 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:58 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:58 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:58 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:58 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:58 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:53:59 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:53:59 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:01 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:01 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:01 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:01 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:03 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:03 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:03 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:03 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:03 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:03 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:03 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:03 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:03 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:03 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:10 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:10 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:14 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:14 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:17 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:17 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:17 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:17 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:17 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:17 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:17 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:17 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:17 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:17 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:21 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:21 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:26 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:26 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:30 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:30 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:30 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:30 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:31 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:31 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:34 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:34 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:35 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:35 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 13:54:35 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 13:54:35 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 15:10:56 [RMI TCP Connection(145)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2022-06-16 15:10:57 [RMI TCP Connection(145)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 15:10:57 [RMI TCP Connection(145)-127.0.0.1] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""2022-06-16 15:10:57 [RMI TCP Connection(145)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-06-16 15:10:57 [RMI TCP Connection(145)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-06-16 16:59:22 [restartedMain] INFO  c.c.a.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.1 on Ankit with PID 15764 (C:\Users\ankit\git\ankit-ij006\Authorization\target\classes started by ankit in C:\Users\ankit\git\ankit-ij006\Authorization)
+""2022-06-16 16:59:22 [restartedMain] INFO  c.c.a.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-06-16 16:59:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2022-06-16 16:59:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2022-06-16 16:59:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-06-16 16:59:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 224 ms. Found 1 JPA repository interfaces.
+""2022-06-16 16:59:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+""2022-06-16 16:59:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-06-16 16:59:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+""2022-06-16 16:59:34 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-06-16 16:59:34 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11165 ms
+""2022-06-16 16:59:34 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2022-06-16 16:59:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2022-06-16 16:59:35 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pms'
+""2022-06-16 16:59:36 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-06-16 16:59:37 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+""2022-06-16 16:59:38 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+""2022-06-16 16:59:40 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2022-06-16 16:59:43 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-06-16 16:59:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 16:59:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-06-16 16:59:54 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+""2022-06-16 16:59:54 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2022-06-16 16:59:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+""2022-06-16 16:59:56 [restartedMain] INFO  c.c.a.AuthorizationApplication - Started AuthorizationApplication in 36.759 seconds (JVM running for 43.14)
+""2022-06-16 17:01:48 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-06-16 17:01:48 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2022-06-16 17:01:48 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+""2022-06-16 17:01:48 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 17:01:48 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 17:01:48 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 17:01:50 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:50 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:50 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:50 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:52 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:52 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:01:53 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:53 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:01:54 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:01:54 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:03:34 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Authentication started....
+""2022-06-16 17:03:34 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Authentication successfully..
+""2022-06-16 17:03:34 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Received request to generate token for Ankit
+""2022-06-16 17:03:43 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:03:43 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:03:43 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:03:43 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:00 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:00 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:30 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:30 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:04:30 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:30 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:30 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:30 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:30 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:30 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:30 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:30 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:04:51 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:04:51 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:09 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:09 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:05:09 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:09 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:09 [http-nio-8081-exec-9] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:09 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:09 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:09 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:09 [http-nio-8081-exec-9] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:09 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:11 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:11 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:11 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:11 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-10] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-10] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-1] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-1] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-7] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-7] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:15 [http-nio-8081-exec-3] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:15 [http-nio-8081-exec-3] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:20 [http-nio-8081-exec-4] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:20 [http-nio-8081-exec-4] INFO  c.c.a.controller.AuthController - Getting userId by token...
+""2022-06-16 17:05:20 [http-nio-8081-exec-5] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:20 [http-nio-8081-exec-2] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:20 [http-nio-8081-exec-5] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:20 [http-nio-8081-exec-8] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:20 [http-nio-8081-exec-2] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:20 [http-nio-8081-exec-8] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 17:05:20 [http-nio-8081-exec-6] INFO  c.c.a.util.JwtRequestFilter - SecurityContextHolder was null!!!
+""2022-06-16 17:05:20 [http-nio-8081-exec-6] INFO  c.c.a.controller.AuthController - Getting username by token...
+""2022-06-16 18:31:20 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m43s911ms810µs).
+""2022-06-16 19:23:00 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 19:23:01 [Thread-1] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""2022-06-16 19:23:01 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2022-06-16 19:23:01 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2022-06-16 19:23:02 [restartedMain] INFO  c.c.a.AuthorizationApplication - Starting AuthorizationApplication using Java 16.0.1 on Ankit with PID 15764 (C:\Users\ankit\git\ankit-ij006\Authorization\target\classes started by ankit in C:\Users\ankit\git\ankit-ij006\Authorization)
+""2022-06-16 19:23:02 [restartedMain] INFO  c.c.a.AuthorizationApplication - No active profile set, falling back to 1 default profile: "default"
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interfaces.
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+""2022-06-16 19:23:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2022-06-16 19:23:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.58]
+""2022-06-16 19:23:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1320 ms
+""2022-06-16 19:23:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+""2022-06-16 19:23:03 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pms'
+""2022-06-16 19:23:03 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2022-06-16 19:23:03 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+""2022-06-16 19:23:03 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2022-06-16 19:23:03 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 19:23:04 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2022-06-16 19:23:04 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure any request
+""2022-06-16 19:23:04 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2022-06-16 19:23:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+""2022-06-16 19:23:04 [restartedMain] INFO  c.c.a.AuthorizationApplication - Started AuthorizationApplication in 2.611 seconds (JVM running for 8632.072)
+""2022-06-16 19:23:04 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+""2022-06-16 19:23:26 [RMI TCP Connection(121)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2022-06-16 19:23:27 [RMI TCP Connection(121)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2022-06-16 19:23:27 [RMI TCP Connection(121)-127.0.0.1] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+""2022-06-16 19:23:27 [RMI TCP Connection(121)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+""2022-06-16 19:23:27 [RMI TCP Connection(121)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+"
